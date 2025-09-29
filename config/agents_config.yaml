@@ -1,0 +1,72 @@
+agents:
+  content_creator:
+    enabled: true
+    capabilities:
+      - blog_writing
+      - social_media_posts
+      - video_scripts
+      - email_campaigns
+    models:
+      text_generation: "gpt-3.5-turbo"
+      content_optimization: "local/bert-base"
+    
+  social_media_manager:
+    enabled: true
+    platforms:
+      - facebook
+      - instagram
+      - twitter
+      - youtube
+      - tiktok
+    scheduling: true
+    analytics: true
+    
+  website_builder:
+    enabled: true
+    technologies:
+      - html5
+      - css3
+      - javascript
+      - react
+      - vue
+    templates: true
+    responsive: true
+    
+  ml_engineer:
+    enabled: true
+    capabilities:
+      - data_cleaning
+      - feature_engineering
+      - model_training
+      - hyperparameter_tuning
+    frameworks:
+      - sklearn
+      - tensorflow
+      - pytorch
+      
+  customer_support:
+    enabled: true
+    channels:
+      - chat
+      - email
+      - social_media
+    languages:
+      - english
+      - spanish
+      - french
+
+orchestrator:
+  max_concurrent_tasks: 10
+  task_timeout: 3600
+  retry_attempts: 3
+  
+monitoring:
+  enabled: true
+  metrics:
+    - cpu_usage
+    - memory_usage
+    - task_completion_rate
+    - error_rate
+  alerts:
+    - high_error_rate
+    - system_overload
